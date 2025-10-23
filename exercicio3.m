@@ -1,3 +1,9 @@
+function [mu] = exercicio3(t, NC)
+
+% t: vetor de tempo com instâncias das medições
+% NC: medida do número de células a cada instante t
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 tempo_quad = t.^2
 
 N = length(t)
@@ -19,3 +25,7 @@ a0 = soma_ln_celulas/N - a1*(soma_tempo/N)
 
 % mantenha essas duas linhas finais, subtituindo mu pelo valor que você calculou
 mu = a1;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+endfunction
